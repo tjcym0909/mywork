@@ -15,7 +15,16 @@ public class IteratorEx {
 			int n = it.next();
 			System.out.println(n);
 		}
+			int sum = 0;
+			it = v.iterator();
+			while(it.hasNext()) {
+				int n = it.next();
+				sum += n;
+			}
+			
+			System.out.println("벡터에 있는 정수 합 : " + sum);
+		}
 
 	}
 
-}
+
